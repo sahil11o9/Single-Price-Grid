@@ -1,0 +1,219 @@
+/*CSS Variables */
+:root{
+    /* --primary:#ddd; */
+    --shadow:11px 8px 11px rgba(8, 8, 8, 0.698);
+    /* --shadow: rgba(8, 8, 8, 0.698) */
+}
+div{
+    display: -ms-inline-grid;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* DABBA OP */
+.dabba{
+    padding: 10rem;
+    padding-right: 13rem;
+    padding-top: 3rem;
+    background-image: url(https://secure.static.tumblr.com/w8ezvc2/hPkn0wdzp/themes_illustration_minimalist.png);
+}
+
+/* Container */
+.container{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    margin: 2rem;
+    /* width: 100%; */
+    /* height: 100%; */
+    background-image: url(/60ProjectsIn60Days/themes_illustration_minimalist.png) no-repeat center center/cover;
+    z-index: 5;
+}
+
+/* Both Cards */
+.boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+/* Boxes */
+.box1{
+    padding: 2rem;
+    /* padding-left: 4rem; */
+    background: white;
+    font-size: 25px;
+}
+.box1 h1{
+    color: hsl(179, 62%, 43%);
+    justify-content: center;
+    /* font-size: 3rem; */
+    align-items: center;
+}
+.box1 h3{
+    color: hsl(71, 73%, 54%);
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.box1 p{
+    color: hsl(206, 8%, 67%);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    background: hsl(179, 57%, 32%);
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+h2{
+    color: rgb(207, 205, 205);
+    margin: 55px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.box2 h3{
+    font-size: 55px;
+    color: whitesmoke;
+    margin-left: 55px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.box2 h3 b{
+    color: #658ec6;
+    font-weight: 900;
+    opacity: .8;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.box2 h6{
+    color: hsl(236, 52%, 70%);
+    justify-content: center;
+    align-items: center;
+}
+.box2 p{
+    color: hsl(218, 22%, 67%);
+    margin: 25px;
+    margin-left: 55px;
+    font-weight: bolder;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.box2 .btn{
+    background:hsl(71, 73%, 54%);
+    color: whitesmoke;
+    padding: .8rem 4.8rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: .5rem;
+    /* height: 555px; */
+    margin-left: 55px;
+    /* box-shadow: 25px,25px,rgba(104,104,104,0.8); */
+    /* box-shadow: var(--shadow); */
+    z-index: 1;
+}
+.box2 .btn::before{
+    z-index: -1;
+    box-shadow: var(--shadow);
+}
+
+.box3{
+    background: rgb(47, 187, 173);
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.box3 h2{
+    color: hsl(204, 43%, 93%);
+}
+.box3 ul{
+    color: hsl(216, 22%, 73%);
+    list-style-type: none;  
+    padding-left: 59px;
+}
+
+/* Media Queries */
+@media (max-width: 1078px) and (min-width: 901px){
+    .box2 .btn{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media (max-width:900px){
+    .box2 .btn{
+        padding: 1rem ;
+        margin: 2.2rem;
+        padding-left: 1.2rem;
+    }
+    h2{
+        margin: 28px;
+    }
+    .box2 h3{
+        margin-left: 28px;
+        font-size: 4rem;
+    }
+    .box2 p{
+        margin-left: 28px;
+    }
+    .box3 ul{
+        padding-left: 42px;
+    }
+}
+@media (max-width:375px){
+    .dabba{
+        padding: 3rem;
+    }
+.container{
+    grid-template-areas: 
+    'box1'
+    'box2'
+    'box3';
+    padding: 0;
+    margin: 0;
+}
+.box1 h1{
+    font-size: 1rem;
+}
+.box1 h3{
+    font-size: 1rem;
+}
+h2{
+    margin-left: -30px;
+    font-size: 1rem;
+    margin-bottom: -4px;
+}
+.box2{
+    padding-bottom: 1.5rem;
+}
+.box2 h3 {
+    margin-left: -30px;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.box2 p{
+    margin-left: -25px;
+    margin-right: 10px;
+}
+.box2 .btn{
+    padding: 14px;
+    width: 12px;
+    display: var(--shadow) block;
+}
+.box3 h2{
+    padding-left: 55px;
+}
+.box3 ul{
+    margin-left: -16px;
+    margin-bottom: 15px;
+}
+}
